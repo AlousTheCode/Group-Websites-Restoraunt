@@ -1,0 +1,138 @@
+/* Genel Ayarlar */
+html {
+    scroll-behavior: smooth; /* Tıklayınca yavaşça kayarak gider */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+
+/* Navigasyon Çubuğu */
+.navbar {
+    background-color: #000;
+    padding: 20px;
+    position: sticky; /* Menü yukarıda sabit kalsın istersen */
+    top: 0;
+    border-bottom: 2px solid #d4af37; /* Altın rengi çizgi */
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d4af37;
+    margin-right: 30px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.links a:hover {
+    color: #d4af37; /* Üzerine gelince sarı olur */
+}
+
+/* Hero Section (Büyük Resimli Alan) */
+.hero-section {
+    /* İndirdiğin resmi buraya bağlıyoruz */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex; /* Yazıları ortalamak için */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.hero-section p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #d4af37;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* İçerik Kutuları */
+.content-section {
+    padding: 60px 20px;
+}
+
+.dark-bg {
+    background-color: #222; /* Rezervasyon kısmı biraz daha koyu olsun */
+}
+
+h2 {
+    color: #d4af37;
+    font-size: 36px;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+/* Menü Öğeleri */
+.menu-item {
+    border: 1px solid #444;
+    padding: 20px;
+    width: 30%;
+    display: inline-block; /* Yan yana dizme */
+    margin: 10px;
+    background-color: #2a2a2a;
+    vertical-align: top;
+}
+
+.price {
+    color: #d4af37;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Form Tasarımı */
+.reservation-form input {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #333;
+    border: 1px solid #555;
+    color: white;
+}
+
+.reservation-form button {
+    padding: 10px 40px;
+    background-color: #d4af37;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    padding: 40px;
+    border-top: 2px solid #d4af37;
+}
