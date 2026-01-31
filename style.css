@@ -2,7 +2,14 @@
 html {
     scroll-behavior: smooth; /* Tıklayınca yavaşça kayarak gider */
 }
-
+body {
+    font-family: 'Lato', sans-serif;
+    /* Diğer kodların kalsın */
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Başlıklar daha süslü olur */
+}
+/* Genel Ayarlar */
 body {
     margin: 0;
     padding: 0;
@@ -23,10 +30,12 @@ body {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #d4af37;
-    margin-right: 30px;
+    font-size: 28px;
+    font-weight: 900; /* Daha kalın */
+    letter-spacing: 2px; /* Harf aralarını açar */
+    border: 2px solid #d4af37; /* Çerçeve ekler */
+    padding: 5px 15px;
+    text-transform: uppercase;
 }
 
 .links a {
@@ -135,4 +144,10 @@ h2 {
     background-color: #000;
     padding: 40px;
     border-top: 2px solid #d4af37;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05); /* Hafifçe büyür */
+    transition: 0.3s; /* Yumuşak geçiş sağlar */
 }
