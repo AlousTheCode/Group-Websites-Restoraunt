@@ -1,62 +1,53 @@
-/* Genel Ayarlar */
+/* 1. GENEL AYARLAR */
 html {
-    scroll-behavior: smooth; /* Tıklayınca yavaşça kayarak gider */
+    scroll-behavior: smooth; /* Sayfa içi kaydırma efekti */
 }
-body {
-    font-family: 'Lato', sans-serif;
-    /* Diğer kodların kalsın */
-}
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif; /* Başlıklar daha süslü olur */
-}
-/* Genel Ayarlar */
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif; /* Google Font aktif */
     background-color: #1a1a1a;
     color: white;
     text-align: center;
 }
 
-/* Navigasyon Çubuğu */
+/* Başlıklar için süslü font */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* 2. NAVİGASYON (Sadece Logo Kaldı - Ortalandı) */
 .navbar {
     background-color: #000;
     padding: 20px;
-    position: sticky; /* Menü yukarıda sabit kalsın istersen */
+    position: sticky; /* Menü yukarıda sabit kalsın */
     top: 0;
-    border-bottom: 2px solid #d4af37; /* Altın rengi çizgi */
+    border-bottom: 2px solid #d4af37; /* Altın çizgi */
     z-index: 1000;
+    display: flex;
+    justify-content: center; /* Logoyu tam ortaya alır */
+    align-items: center;
 }
 
 .logo {
     font-size: 28px;
-    font-weight: 900; /* Daha kalın */
-    letter-spacing: 2px; /* Harf aralarını açar */
-    border: 2px solid #d4af37; /* Çerçeve ekler */
+    font-weight: 900;
+    letter-spacing: 2px;
+    border: 2px solid #d4af37;
     padding: 5px 15px;
     text-transform: uppercase;
+    color: #d4af37;
 }
 
-.links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-}
-
-.links a:hover {
-    color: #d4af37; /* Üzerine gelince sarı olur */
-}
-
-/* Hero Section (Büyük Resimli Alan) */
+/* 3. HERO BÖLÜMÜ (Arka Plan ve Zoom Butonu) */
 .hero-section {
-    /* İndirdiğin resmi buraya bağlıyoruz */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('background.png');
+    /* Resim dosyanın adı background.png ise burası çalışır */
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('background.png');
     background-size: cover;
     background-position: center;
-    height: 600px;
-    display: flex; /* Yazıları ortalamak için */
+    height: 600px; /* Yükseklik */
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -66,34 +57,54 @@ body {
     font-size: 60px;
     margin-bottom: 10px;
     text-shadow: 2px 2px 5px black;
+    color: #f4f4f4;
 }
 
 .hero-section p {
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-.btn {
-    background-color: #d4af37;
-    color: black;
-    padding: 15px 30px;
+/* --- YENİ EKLENEN ZOOM BUTONU --- */
+.zoom-btn {
+    display: inline-block;
+    background-color: transparent; /* İçi boş (şeffaf) */
+    color: #d4af37;
+    border: 3px solid #d4af37; /* Kalın altın çerçeve */
+    padding: 20px 60px; /* Butonu irileştirdik */
+    font-size: 22px;
+    font-weight: 900;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    /* Animasyon Ayarı */
+    transition: all 0.4s ease; 
 }
 
-/* İçerik Kutuları */
+/* Butonun Üzerine Gelince (Hover) */
+.zoom-btn:hover {
+    background-color: #d4af37; /* İçi altın dolsun */
+    color: black; /* Yazı siyah olsun */
+    
+    /* BÜYÜME (ZOOM) EFEKTİ */
+    transform: scale(1.3); /* %30 büyütür */
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.8); /* Parlama */
+}
+
+/* 4. İÇERİK KUTULARI (MENU & REZERVASYON) */
 .content-section {
     padding: 60px 20px;
 }
 
 .dark-bg {
-    background-color: #222; /* Rezervasyon kısmı biraz daha koyu olsun */
+    background-color: #222; /* Koyu gri zemin */
 }
 
 h2 {
     color: #d4af37;
     font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .subtitle {
@@ -102,52 +113,63 @@ h2 {
     margin-bottom: 40px;
 }
 
-/* Menü Öğeleri */
+/* 5. MENÜ ÖĞELERİ */
 .menu-item {
     border: 1px solid #444;
     padding: 20px;
     width: 30%;
-    display: inline-block; /* Yan yana dizme */
+    display: inline-block;
     margin: 10px;
     background-color: #2a2a2a;
     vertical-align: top;
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    border-color: #d4af37;
+    transform: translateY(-5px); /* Menüler de hafif oynasın */
 }
 
 .price {
+    display: block;
+    margin-top: 10px;
     color: #d4af37;
     font-weight: bold;
     font-size: 20px;
 }
 
-/* Form Tasarımı */
+/* 6. REZERVASYON FORMU */
 .reservation-form input {
     display: block;
     width: 300px;
-    padding: 10px;
+    padding: 12px;
     margin: 10px auto;
     background-color: #333;
     border: 1px solid #555;
     color: white;
+    font-family: 'Lato', sans-serif;
 }
 
 .reservation-form button {
-    padding: 10px 40px;
+    padding: 12px 40px;
     background-color: #d4af37;
     border: none;
     cursor: pointer;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
-/* Footer */
+.reservation-form button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* 7. FOOTER */
 .footer {
     background-color: #000;
     padding: 40px;
     border-top: 2px solid #d4af37;
-}
-.btn:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.05); /* Hafifçe büyür */
-    transition: 0.3s; /* Yumuşak geçiş sağlar */
 }
