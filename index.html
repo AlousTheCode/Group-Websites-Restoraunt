@@ -2,48 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>John's Steakhouse | Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Steakhouse</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="header-section">
-        <h1>John's Steakhouse</h1>
+    <div class="navbar">
+        <span class="logo">JOHN'S STEAKHOUSE</span>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#reservation">Reservation</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div id="home" class="hero-section">
+        <h1>Welcome to John's</h1>
         <p>Premium Steaks & Traditional Grill</p>
+        <a href="#reservation" class="btn">Book a Table</a>
     </div>
 
-    <div class="about-section">
-        <h2>About Us</h2>
-        <p>We provide the best quality meat in London. Our steaks are aged for 28 days to give you the best taste. Quality is our first priority.</p>
+    <div id="menu" class="content-section">
+        <h2>Our Menu</h2>
+        <p class="subtitle">Delicious cuts grilled to perfection</p>
+
+        <div class="menu-item">
+            <h3>Ribeye Steak</h3>
+            <p>Juicy and flavorful, served with mashed potatoes.</p>
+            <span class="price">$35</span>
+        </div>
+
+        <div class="menu-item">
+            <h3>T-Bone Steak</h3>
+            <p>The best of both worlds, served with grilled veggies.</p>
+            <span class="price">$42</span>
+        </div>
+
+        <div class="menu-item">
+            <h3>Chef's Special Burger</h3>
+            <p>Angus beef, cheddar cheese, and special sauce.</p>
+            <span class="price">$18</span>
+        </div>
     </div>
 
-    <div class="menu-section">
-        <h2>Our Popular Dishes</h2>
+    <div id="reservation" class="content-section dark-bg">
+        <h2>Reservation</h2>
+        <p>Book your table now</p>
         
-        <div class="food-box">
-            <h3>Classic Sirloin</h3>
-            <p>Served with chips and salad.</p>
-            <p><strong>Price: $25</strong></p>
-        </div>
-
-        <div class="food-box">
-            <h3>Beef Burger</h3>
-            <p>Homemade burger with cheddar cheese.</p>
-            <p><strong>Price: $18</strong></p>
-        </div>
-
-        <div class="food-box">
-            <h3>Grilled Chicken</h3>
-            <p>Special marinated chicken breast.</p>
-            <p><strong>Price: $20</strong></p>
-        </div>
+        <form class="reservation-form">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Phone Number">
+            <input type="date">
+            <input type="number" placeholder="Guests" min="1">
+            <button type="button">Confirm Booking</button>
+        </form>
     </div>
 
-    <div class="footer-section">
-        <h2>Visit Us</h2>
-        <p>Address: 45 Grill Street, London</p>
-        <p>Phone: +44 20 1234 5678</p>
-        <p>Email: info@johnsteakhouse.com</p>
+    <div id="contact" class="footer">
+        <h2>Contact Us</h2>
+        <p>Address: 123 London Road, London, UK</p>
+        <p>Phone: +44 20 7946 0000</p>
+        <p>Email: info@johnssteakhouse.com</p>
+        <br>
+        <p style="font-size: 12px; color: grey;">© 2026 John's Steakhouse Student Project</p>
     </div>
 
 </body>

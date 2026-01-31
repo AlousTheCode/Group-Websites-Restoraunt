@@ -43,7 +43,7 @@ body {
 /* Hero Section (Büyük Resimli Alan) */
 .hero-section {
     /* İndirdiğin resmi buraya bağlıyoruz */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('background.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('background.png');
     background-size: cover;
     background-position: center;
     height: 600px;
