@@ -39,9 +39,9 @@ h1, h2, h3 {
     color: #d4af37;
 }
 
-/* 3. HERO BÖLÜMÜ (Arka Plan ve Yazılar) */
+/* 3. HERO BÖLÜMÜ (Ana Sayfa Arka Planı) */
 .hero-section {
-    /* Senin resim ismini korudum: steakhouse.png */
+    /* Senin resim ismin: image.png */
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('image.png');
     background-size: cover;
     background-position: center;
@@ -52,7 +52,7 @@ h1, h2, h3 {
     align-items: center;
 }
 
-/* MENU PAGE BACKGROUND */
+/* MENU PAGE BACKGROUND (Menü Sayfası Arka Planı) */
 .menu-hero {
     background-image: linear-gradient(
         rgba(0,0,0,0.75),
@@ -63,7 +63,6 @@ h1, h2, h3 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     min-height: 100vh;
     padding-top: 120px;
 }
@@ -80,7 +79,7 @@ h1, h2, h3 {
     margin-bottom: 40px;
 }
 
-/* --- YENİ EKLENEN KISIM: BUTONLARI YAN YANA ALMA --- */
+/* --- BUTONLARI YAN YANA ALMA --- */
 .btn-box {
     display: flex;       /* Yan yana dizme komutu */
     gap: 30px;           /* İki buton arasındaki boşluk */
@@ -90,31 +89,31 @@ h1, h2, h3 {
 /* --- BUTONLARIN ORTAK AYARLARI --- */
 .zoom-btn {
     display: inline-block;
-    padding: 15px 40px; /* Biraz küçülttüm ki yan yana sığsınlar */
+    padding: 15px 40px;
     font-size: 18px;
     font-weight: 900;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border-radius: 5px; /* Hafif yuvarlak köşe */
+    border-radius: 5px;
     transition: all 0.3s ease;
 }
 
-/* 1. STİL: DOLU BUTON sol Menu) */
+/* 1. STİL: DOLU BUTON (Sol) */
 .filled {
     background-color: #d4af37;
     color: black;
     border: 3px solid #d4af37;
 }
 
-/* 2. STİL: BOŞ BUTON  saü Rezervasyon) */
+/* 2. STİL: BOŞ BUTON (Sağ) */
 .outline {
     background-color: transparent;
     color: #d4af37;
     border: 3px solid #d4af37;
 }
 
-/* --- HOVER (ÜZERİNE GELİNCE) EFEKTLERİ --- */
+/* --- HOVER EFEKTLERİ --- */
 .filled:hover {
     background-color: white;
     border-color: white;
@@ -164,34 +163,43 @@ h2 { color: #d4af37; font-size: 36px; }
     padding: 40px;
     border-top: 2px solid #d4af37;
 }
-/* --- REZERVASYON SAYFASI ÖZEL --- */
 
-/* Form içindeki yazılar (Label) */
-.reservation-form label {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    color: #d4af37; /* Altın Rengi Başlıklar */
-    font-weight: bold;
-    font-size: 18px;
+/* --- REZERVASYON FORMU DÜZENLEMESİ (GÜNCELLENDİ) --- */
+/* Bu kısım formun dağılmasını engeller ve şık görünmesini sağlar */
+
+/* 1. Form Kutusu */
+.reservation-form {
+    max-width: 500px;   /* Form çok genişleyip dağılmasın */
+    margin: 0 auto;     /* Sayfanın ortasına hizala */
+    text-align: left;   /* Yazılar soldan başlasın */
 }
 
-/* Kutucuklar (Input) */
+/* 2. Başlıklar (Name, Email vb.) */
+.reservation-form label {
+    display: block;      /* !!! ÖNEMLİ: Yan yana durmayı engeller, alt alta dizer */
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #d4af37;      /* Altın Rengi */
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif; /* Şık font */
+}
+
+/* 3. Kutucuklar (Input) */
 .reservation-form input {
-    width: 100%; /* Kutuyu tam genişlik yapar */
+    width: 100%;         /* Kutuyu tam genişlik yapar */
     padding: 15px;
-    background-color: #333; /* Koyu Gri Zemin */
-    border: 1px solid #555;
-    color: white; /* Yazı rengi beyaz */
+    background-color: #222; /* Koyu Gri Zemin */
+    border: 1px solid #d4af37; /* Altın rengi kenarlık */
+    color: white;        /* Yazı rengi beyaz */
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     border-radius: 5px;
     box-sizing: border-box; /* Taşmayı engeller */
 }
 
-/* Kutucuğa tıklayınca kenarı parlasın */
+/* 4. Tıklayınca Parlama Efekti */
 .reservation-form input:focus {
     outline: none;
-    border-color: #d4af37;
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5); /* Altın ışık */
 }
