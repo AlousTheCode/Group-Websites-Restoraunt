@@ -42,7 +42,7 @@ h1, h2, h3 {
 /* 3. HERO BÖLÜMÜ (Arka Plan ve Yazılar) */
 .hero-section {
     /* Senin resim ismini korudum: steakhouse.png */
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('steakhouse.png');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('image.png');
     background-size: cover;
     background-position: center;
     height: 600px;
