@@ -41,8 +41,10 @@ h1, h2, h3 {
 
 /* 3. HERO BÖLÜMÜ (Arka Plan ve Yazılar) */
 .hero-section {
-    /* Senin resim ismini korudum: steakhouse.png */
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('image.png');
+    /* Bu internetten rastgele bir et restoranı fotosu */
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1544025162-d76694265947');
+    
+    /* Geri kalanlar aynı */
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -51,6 +53,7 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
 }
+
 
 .hero-section h1 {
     font-size: 60px;
