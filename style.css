@@ -41,10 +41,8 @@ h1, h2, h3 {
 
 /* 3. HERO BÖLÜMÜ (Arka Plan ve Yazılar) */
 .hero-section {
-    /* Bu internetten rastgele bir et restoranı fotosu */
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1544025162-d76694265947');
-    
-    /* Geri kalanlar aynı */
+    /* Senin resim ismini korudum: steakhouse.png */
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('image.png');
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -53,7 +51,6 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
 }
-
 
 .hero-section h1 {
     font-size: 60px;
@@ -87,14 +84,14 @@ h1, h2, h3 {
     transition: all 0.3s ease;
 }
 
-/* 1. STİL: DOLU BUTON (Sol Taraf - Menu) */
+/* 1. STİL: DOLU BUTON sol Menu) */
 .filled {
     background-color: #d4af37;
     color: black;
     border: 3px solid #d4af37;
 }
 
-/* 2. STİL: BOŞ BUTON (Sağ Taraf - Rezervasyon) */
+/* 2. STİL: BOŞ BUTON  saü Rezervasyon) */
 .outline {
     background-color: transparent;
     color: #d4af37;
@@ -105,8 +102,8 @@ h1, h2, h3 {
 .filled:hover {
     background-color: white;
     border-color: white;
-    color: black;
-    transform: scale(1.1); /* %10 büyüsün (1.5 çok büyük olur yan yanayken) */
+    color: black; 
+    transform: scale(1.1); 
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
