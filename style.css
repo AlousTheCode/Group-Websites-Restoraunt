@@ -164,3 +164,34 @@ h2 { color: #d4af37; font-size: 36px; }
     padding: 40px;
     border-top: 2px solid #d4af37;
 }
+/* --- REZERVASYON SAYFASI ÖZEL --- */
+
+/* Form içindeki yazılar (Label) */
+.reservation-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #d4af37; /* Altın Rengi Başlıklar */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Kutucuklar (Input) */
+.reservation-form input {
+    width: 100%; /* Kutuyu tam genişlik yapar */
+    padding: 15px;
+    background-color: #333; /* Koyu Gri Zemin */
+    border: 1px solid #555;
+    color: white; /* Yazı rengi beyaz */
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Taşmayı engeller */
+}
+
+/* Kutucuğa tıklayınca kenarı parlasın */
+.reservation-form input:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}

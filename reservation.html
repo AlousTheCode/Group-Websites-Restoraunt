@@ -1,1 +1,62 @@
-asdad
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - John's Steakhouse</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=1.2">
+</head>
+<body>
+
+    <div class="navbar">
+        <span class="logo">JOHN'S STEAKHOUSE</span>
+        <div style="margin-left: 20px;">
+            <a href="index.html" style="color: white; text-decoration: none; margin: 0 10px; font-weight: bold;">Home</a>
+            <a href="menu.html" style="color: white; text-decoration: none; margin: 0 10px; font-weight: bold;">Menu</a>
+        </div>
+    </div>
+
+    <div class="content-section" style="padding-top: 50px; min-height: 600px;">
+        
+        <h1>Reserve Your Table</h1>
+        <p class="subtitle">Book a table for an unforgettable evening</p>
+
+        <div style="max-width: 500px; margin: 0 auto; text-align: left;">
+            <form class="reservation-form">
+                
+                <label>Name:</label>
+                <input type="text" placeholder="John Doe" required>
+
+                <label>Email:</label>
+                <input type="email" placeholder="john@example.com" required>
+
+                <label>Phone Number:</label>
+                <input type="tel" placeholder="+44 7123 456789" required>
+
+                <label>Number of Guests:</label>
+                <input type="number" min="1" max="20" placeholder="2" required>
+
+                <label>Date & Time:</label>
+                <input type="datetime-local" required>
+
+                <div style="text-align: center;">
+                    <button type="submit" class="zoom-btn filled" style="border:none; cursor:pointer;">SUBMIT RESERVATION</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h2>Contact Us</h2>
+        <p>123 London Road, London, UK</p>
+        <p>info@johnssteakhouse.com</p>
+        <br>
+        <p style="font-size: 12px; color: grey;">© 2026 John's Steakhouse Student Project</p>
+    </div>
+
+</body>
+</html>
